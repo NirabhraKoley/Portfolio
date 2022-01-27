@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #1A1A40;
+}
+nav {
+  background: #1A1A40;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+
+.folio {
+  color: #FA58B6;
+}
+.folio:hover {
+  color: cyan;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+}
+nav ul li a.active {
+  color: cyan;
+  border: 1px solid cyan;
+}
+nav ul li a:hover {
+  color: cyan;
+}
+.logo {
+  position: fixed;
+  font-size: 33px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  left: 10px;
+}
+.port:hover {
+  color: cyan;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+
+.container h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+.container h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: xx-large;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  position: absolute;
+  top: 45%;
+  color: #FA58B6;
+}
+.container ul {
+  list-style: none;
+}
+
+.header-area{
+  text-transform: capitalize;
+}
+.animated{
+  color: #fff;
+}
+.header-area h2 span{
+  color: #28DF99;
+}
+img {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  width: 650px;
+  height: 600px;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    position: absolute;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 1%;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    background: #1A1A40;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    left: 100%;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  #click {
+    display: none;
+  }
+  nav ul li {
+    margin: 20px 0;
+  }
+  nav ul li a {
+    font-size: 20px;
+    display: block;
+  }
+  nav ul li a.active {
+    color: cyan;
+    background: none;
+    border: none;
+  }
+  nav ul li a:hover {
+    color: cyan;
+    background: none;
+    border: none;
+  }
+  img {
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    height: 50%;
+    top: 15%;
+    left: 0;
+  }
+  .container {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    max-width: 75%;
+    color: #FA58B6;
+  }
+}

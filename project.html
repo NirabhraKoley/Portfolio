@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./projectStyle.css">
+ <script src="https://kit.fontawesome.com/efbea8cdf7.js" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+ <link rel="icon" href="./icon.jpg">
+ <title>Nirabhra Koley</title>
+</head>
+
+<body>
+ <nav>
+  <label class="logo"><span class="port">Port</span><span class="folio"> Folio</span></label>
+  <input type="checkbox" id="click">
+  <label for="click" class="menu-btn">
+   <i class="fas fa-bars"></i>
+  </label>
+  <ul>
+   <li><a href="./index.html">Home</a></li>
+   <li><a href="./about.html">About</a></li>
+   <li><a class="active" href="#">Project</a></li>
+   <li><a href="./contact.html">Contact</a></li>
+  </ul>
+ </nav>
+ <div class="wrapper">
+  <div class="carousel owl-carousel">
+   <div class="card card-1">
+    <h1>Corona Tracker</h1>
+    <img class="circular" src="./projects/corona.jpg" />
+    <!-- <img src="./projects/corona.jpg" alt=""> -->
+    <h2>Language: HTML, CSS, Javascript</h2>
+    <a href="https://github.com/NirabhraKoley/portfolio"><i class="fab fa-github"></i></a>
+   </div>
+   <div class="card card-2">
+    <h1>Rock Paper Scissors</h1>
+    <img class="circular" src="./projects/rock-paper-scissors.jpg" />
+    <!-- <img src="./projects/corona.jpg" alt=""> -->
+    <h2>Language: HTML, CSS, Javascript</h2>
+    <a href="https://github.com/NirabhraKoley/Rock-Paper-Scissors"><i class="fab fa-github"></i></a>
+   </div>
+   <div class="card card-3">
+    <h1>Titanic Survival Prediction</h1>
+    <img class="circular" src="./projects/titanic.jpg" />
+    <!-- <img src="./projects/corona.jpg" alt=""> -->
+    <h2>Language: Python</h2>
+    <a href="https://github.com/NirabhraKoley/Titanic-Survival-Prediction"><i class="fab fa-github"></i></a>
+   </div>
+   <div class="card card-4">
+    <h1>Movie Recommendation System</h1>
+    <img class="circular" src="./projects/movie.jpg" />
+    <!-- <img src="./projects/corona.jpg" alt=""> -->
+    <h2>Language: Python</h2>
+    <a href="https://github.com/NirabhraKoley/Movie-Recommendation-System"><i class="fab fa-github"></i></a>
+   </div>
+   <div class="card card-5">Coming Soon</div>
+   <div class="card card-6">Coming Soon</div>
+   <div class="card card-7">Coming Soon</div>
+  </div>
+ </div>
+ <script>
+  $(".carousel").owlCarousel({
+   margin: 10,
+   loop: true,
+   autoplay: true,
+   autoPlayTimeout: 0.1,
+   autoplayHoverPause: true,
+   responsive: {
+    0: {
+     items: 1,
+     nav: false
+    },
+    600: {
+     items: 1,
+     nav: false
+    },
+    1000: {
+     items: 3,
+     nav: false
+    }
+   }
+  })
+ </script>
+</body>
+
+</html>
